@@ -1,0 +1,24 @@
+body {
+    background-image: url("/css/background2jpg.jpg") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+    }
+}
+
+
+/* Contact form styles */
+
+.form-wrapper {
+    display: flex;
+    justify-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
