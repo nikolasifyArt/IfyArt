@@ -3,22 +3,26 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="stylesheet" href="./css/MainStyle.css" />
+  <!-- emailjs cdn  -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>  <link rel="stylesheet" href="./css/MainStyle.css" />
   <link rel="stylesheet" type="text/css" href="./css/background.css" />
+  <!-- font awesome cdn start -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- font awesome cdn end -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <script src="./js/script.js"></script>
   <title>Contact Form</title>
+  <script src="./js/script.js"></script>
 </head>
 
 <body>
   <nav class="navbar">
     <div class="nav-container">
       <div class="logo">
-        <a href="home.html" class="nav-link">Art Gallery Portfolio</a>
+        <a href="index.html" class="nav-link">Art Gallery Portfolio</a>
       </div>
       <ul class="nav-menu">
         <li class="nav-item">
-          <a href="home.html" class="nav-link">Home</a>
+          <a href="index.html" class="nav-link">Home</a>
         </li>
         <li class="nav-item">
           <a href="about.html" class="nav-link">About</a>
@@ -27,14 +31,13 @@
           <a href="contact.html" class="nav-link">Contact</a>
         </li>
       </ul>
-      <button type="button" class="hamburger">☰</button>
     </div>
+    <button type="button" id="burger" class="hamburger">☰</button>
   </nav>
 
   <!-- form start -->
   <div class="form-wrapper">
-
-    <form id="form" class="needs-validation" action="https://api.web3forms.com/submit" method="POST">
+    <form id="contactForm" class="needs-validation" action="https://api.web3forms.com/submit" method="POST">
       <input type="hidden" name="access_key" value="My-access-key-here" />
       <input type="hidden" name="subject" value="New Submission" />
 
@@ -45,32 +48,24 @@
       <label for="fname" class="contact-label">Please Provide your First Name</label>
       <input type="text" id="first_name" name="name" placeholder="First Name" required />
 
-      <!-- firstname handle -->
       <input type="hidden" name="hidden_field" />
       <input type="hidden" name="_gotcha" class="hidden-input" />
       <label for="lname" class="contact-label">Please Provide your Last Name:</label>
       <input type="text" id="lname" name="last_name" placeholder="Last Name" required />
 
       <label for="email" class="contact-label">Please Provide Your Email Address</label>
-      <input type="text" id="email" name="email" placeholder="you@company.com" required />
+      <input type="email" id="email" name="email" placeholder="you@company.com" required />
 
       <label for="country_code" class="contact-label">Country Code</label>
       <select id="country_code" name="country_code" required>
         <option value="+1">United States (+1)</option>
         <option value="+44">United Kingdom (+44)</option>
         <option value="+91">India (+91)</option>
-        <option value="+61">Australia (+61)</option>
-        <option value="+81">Japan (+81)</option>
-        <option value="+49">Germany (+49)</option>
-        <option value="+33">France (+33)</option>
-        <option value="+39">Italy (+39)</option>
-        <option value="+86">China (+86)</option>
-        <option value="+7">Russia (+7)</option>
         <!-- Add more country codes as needed -->
       </select>
 
       <label for="phone">Phone number</label>
-      <input type="text" id="phone" name="phone" placeholder="123-456-7890" required />
+      <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required />
       <label for="comments" class="contact-label">Add any additional information:</label>
       <textarea rows="5" id="comment" name="message" placeholder="Write something.."></textarea>
 
@@ -78,7 +73,6 @@
         Send
       </button>
     </form>
-
     <!-- form end -->
   </div>
 
@@ -89,13 +83,8 @@
         that i Assure you any Ai couldn't to copy
       </h3>
       <div class="social-links">
-        <!-- add a Instagram social link -->
-        <a href="https://www.facebook.com/Nikolasifyxart" class="social-link"><i class="fab fa-facebook-f"></i>
-          facebook</a>
-        <!-- add a instagram a social link icon -->
-        <a href="https://www.instagram.com/nikolasify_art/" class="social-link"><i
-            class="fab fa-instagram"></i>Instagram</a>
-        <!-- add a github social link icon -->
+        <a href="https://www.facebook.com/Nikolasifyxart" class="social-link"><i class="fab fa-facebook-f"></i> facebook</a>
+        <a href="https://www.instagram.com/nikolasify_art/" class="social-link"><i class="fab fa-instagram"></i>Instagram</a>
         <a href="https://github.com/nikolasifyArt" class="social-link"><i class="fab fa-github"></i> GitHub</a>
       </div>
     </div>

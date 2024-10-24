@@ -1,10 +1,6 @@
-// Navbar functionality
-const hamburger = document.getElementById("hamburger");
-const navMenu = document.getElementById("nav-menu");
 
-hamburger.addEventListener("click", () => {
-  navMenu.classList.toggle("show");
-});
+
+
 
 // Carousel functionality
 const carousel = document.getElementById("carousel");
