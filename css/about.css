@@ -24,3 +24,21 @@
 .blog-post {
   margin-bottom: 20px;
 }
+
+@media (max-width: 768px) {
+  .footer-header {
+    font-size: 1rem;
+  }
+
+  .social-link {
+    font-size: 1.2rem;
+  }
+
+  .section-header-text {
+    font-size: 1.5rem;
+  }
+
+  .blog-post {
+    margin-bottom: 10px;
+  }
+}
