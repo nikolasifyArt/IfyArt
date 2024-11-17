@@ -1,0 +1,7 @@
+* input {
+    caret-color: rgba(200, 100, 20, 0.4);
+}
+
+* p,h1, h2, h3, h4, h5, h6, a, span, div, li, ul, ol, input, textarea, button {
+    user-select: none;
+}

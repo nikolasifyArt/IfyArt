@@ -1,0 +1,44 @@
+*::before,
+*::after {
+  box-sizing: border-box !important;
+}
+
+.section-header-text {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin: 20px 0;
+  text-align: center;
+  transform-style: preserve-3d;
+}
+
+.section-header-text::before,
+.section-header-text::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #333;
+}
+
+.blog-post {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer-header {
+    font-size: 1rem;
+  }
+
+  .social-link {
+    font-size: 1.2rem;
+  }
+
+  .section-header-text {
+    font-size: 1.5rem;
+  }
+
+  .blog-post {
+    margin-bottom: 10px;
+  }
+}

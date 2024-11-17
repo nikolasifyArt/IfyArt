@@ -1,0 +1,230 @@
+/* HTML */
+<!-- Slider Start -->
+<div class="slider responsive-slider">
+  <!-- Radio buttons for manual navigation -->
+  <input type="radio" name="radio-btn" id="radio1" checked>
+  <input type="radio" name="radio-btn" id="radio2">
+  <input type="radio" name="radio-btn" id="radio3">
+  <input type="radio" name="radio-btn" id="radio4">
+  <input type="radio" name="radio-btn" id="radio5">
+  <input type="radio" name="radio-btn" id="radio6">
+  <input type="radio" name="radio-btn" id="radio7">
+  <input type="radio" name="radio-btn" id="radio8">
+  <input type="radio" name="radio-btn" id="radio9">
+  <input type="radio" name="radio-btn" id="radio10">
+
+  <!-- Slides -->
+  <div class="slides">
+    <div class="slide first">
+      <img src="./documents/1.png" alt="Image 1">
+    </div>
+    <div class="slide">
+      <img src="./documents/2.jpg" alt="Image 2">
+    </div>
+    <div class="slide">
+      <img src="./documents/3.jpg" alt="Image 3">
+    </div>
+    <div class="slide">
+      <img src="./documents/4.jpg" alt="Image 4">
+    </div>
+    <div class="slide">
+      <img src="./documents/Blind Love.jpg" alt="Image 5">
+    </div>
+    <div class="slide">
+      <img src="./documents/5.jpg" alt="Image 5">
+    </div>
+    <div class="slide">
+      <img src="./documents/6.jpg" alt="Image 6">
+    </div>
+    <div class="slide">
+      <img src="./documents/7.jpg" alt="Image 7">
+    </div>
+    <div class="slide">
+      <img src="./documents/8.jpg" alt="Image 8">
+    </div>
+    <div class="slide">
+      <img src="./documents/9.jpg" alt="Image 9">
+    </div>
+    <div class="slide">
+      <img src="./documents/10.jpg" alt="Image 10">
+    </div>
+  </div>
+
+  <!-- Manual navigation -->
+  <div class="navigation-manual">
+    <label for="radio1" class="manual-btn" title="firstSlider"></label>
+    <label for="radio2" class="manual-btn" title=second-slider></label>
+    <label for="radio3" class="manual-btn" title="third slider"></label>
+    <label for="radio4" class="manual-btn" title="forth slider"></label>
+    <label for="radio5" class="manual-btn" title="fifth slider"></label>
+    <label for="radio6" class="manual-btn" title="sixth slider"></label>
+    <label for="radio7" class="manual-btn" title="seventh slider"></label>
+    <label for="radio8" class="manual-btn" title="eighth slider"></label>
+    <label for="radio9" class="manual-btn" title="ninth slider"></label>
+    <label for="radio10" class="manual-btn" title="tenth slider"></label>
+  </div>
+</div>
+<!-- Slider End -->
+
+/* CSS */
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.slider img {
+  width: 100%;
+  display: block;
+  transition: opacity 1s ease-in-out;
+}
+
+.slider input {
+  display: none;
+}
+
+.slider .slides {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+.slider .slide {
+  min-width: 100%;
+  transition: opacity 1s ease-in-out;
+  padding: 0.25rem;
+  opacity: 0.95;
+}
+
+.slider .navigation-manual {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.slider .manual-btn {
+  border: 2px solid #ffffff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.slider .manual-btn:not(:last-child) {
+  margin-right: 10px;
+}
+
+.slider .manual-btn:hover {
+  background: #ffffff;
+}
+
+#radio1:checked ~ .first {
+  transform: translateX(0);
+}
+
+#radio2:checked ~ .first {
+  transform: translateX(-100%);
+}
+
+#radio3:checked ~ .first {
+  transform: translateX(-200%);
+}
+
+#radio4:checked ~ .first {
+  transform: translateX(-300%);
+}
+
+/* Automatic Navigation */
+@keyframes slide {
+  0% {
+    scale: 0.45;
+    transition-property: ease-in-out;
+    transform: scale3d(1, 1, 1);
+    transform: translateX(-100%);
+    text-orientation: sideways;
+    opacity: 1;
+  }
+  10% {
+    transform: translateX(-200%);
+    scale: 0.55;
+    margin-bottom: 2rem;
+    transition: ease 0.5s linear;
+    transform-origin: 5%;
+    height: fit-content;
+  }
+  20% {
+    transform: translateX(-300%);
+    scale: 0.65;
+    transform-origin: 5%;
+    height: fit-content;
+    margin-bottom: 30px;
+  }
+  30% {
+    transform: translateX(-400%);
+    scale: 0.75;
+    margin-bottom: 40px;
+  }
+  40% {
+    transform: translateX(-500%);
+    scale: 0.85;
+    height: fit-content;
+    margin-bottom: 40px;
+  }
+  50% {
+    transform: translateX(-600%);
+    scale: 0.95;
+    height: fit-content;
+    margin-bottom: 40px;
+  }
+  60% {
+    transform: translateX(-700%);
+    scale: 0.85;
+    height: fit-content;
+    margin-bottom: 40px;
+  }
+  70% {
+    transform: translateX(-800%);
+    scale: 0.45;
+    height: fit-content;
+    margin-bottom: 40px;
+  }
+  80% {
+    transform: translateX(-900%);
+    scale: 0.65;
+    height: fit-content;
+    margin-bottom: 40px;
+  }
+  90% {
+    transform: translateX(-1000%);
+    scale: 0.75;
+    height: fit-content;
+    margin-bottom: 40px;
+  }
+  100% {
+    transform: translateX(-1100%);
+    scale: 0.85;
+    height: fit-content;
+    margin-bottom: 40px;
+  }
+}
+
+.slider .slides {
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform: translateX(-100%);
+  animation: slide 45000ms infinite linear;
+}
+
+/* JavaScript */
+//  images slider scripts
+let counter = 1;
+setInterval(() => {
+  document.getElementById("radio" + counter).checked = true;
+  counter++;
+  if (counter > 4) {
+    counter = 1;
+  }
+}, 5000); // Change image every 5 seconds
