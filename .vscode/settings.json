@@ -15,5 +15,8 @@
     "javascript.experimental.updateImportsOnPaste": true,
     "typescript.experimental.expandableHover": true,
     "typescript.experimental.updateImportsOnPaste": true,
-    "typescript.tsserver.experimental.enableProjectDiagnostics": true
+    "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+    "cSpell.words": [
+        "gsap"
+    ]
 }
