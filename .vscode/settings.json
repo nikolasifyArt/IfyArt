@@ -1,0 +1,19 @@
+{
+    "editor.experimental.asyncTokenizationVerification": true,
+    "editor.experimental.treeSitterTelemetry": true,
+    "workbench.commandPalette.experimental.askChatLocation": "quickChat",
+    "workbench.commandPalette.experimental.suggestCommands": true,
+    "workbench.experimental.cloudChanges.autoStore": "onShutdown",
+    "workbench.experimental.cloudChanges.partialMatches.enabled": true,
+    "workbench.experimental.share.enabled": true,
+    "application.experimental.rendererProfiling": true,
+    "github.copilot.chat.generateTests.codeLens": true,
+    "github.copilot.chat.inlineChatCompletionTrigger.enabled": true,
+    "github.copilot.chat.inlineChatHint.enabled": true,
+    "github.copilot.chat.search.semanticTextResults": true,
+    "github.copilot.chat.temporalContext.enabled": true,
+    "javascript.experimental.updateImportsOnPaste": true,
+    "typescript.experimental.expandableHover": true,
+    "typescript.experimental.updateImportsOnPaste": true,
+    "typescript.tsserver.experimental.enableProjectDiagnostics": true
+}
