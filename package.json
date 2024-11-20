@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@netlify/functions": "^2.8.2",
     "nodemailer": "^6.9.16",
     "nodemailer-express-handlebars": "^7.0.0"
   }
