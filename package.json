@@ -8,5 +8,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "nodemailer": "^6.9.16",
+    "nodemailer-express-handlebars": "^7.0.0"
+  }
 }
