@@ -1,41 +1,3 @@
-import $ from 'jquery';
-import _ from 'lodash';
-import axios from 'axios';
-import { gsap } from 'gsap';
-import { library, dom } from '@fortawesome/fontawesome-svg-core';
-import { faFacebookF, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
-
-// Importing necessary third-party packages
-//  jquery cdn import
-import $ from 'jquery';
-//  lodash cdn import
-import _ from 'lodash';
-//  axios cdn import
-import axios from 'axios';
-
-// Importing GSAP for animations
-import { gsap } from 'gsap';
-
-// Importing nodemailer cdn for DOM manipulation
-import { library, dom } from '@fortawesome/fontawesome-svg-core';
-// Importing FontAwesome icons
-import { faFacebookF, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
-
-// Adding FontAwesome icons to the library
-library.add(faFacebookF, faInstagram, faGithub);
-dom.watch();
-// Importing jQuery for DOM manipulation
-   const loadJQuery = () => {
-    document.addEventListener('DOMContentLoaded', () =>  {
-        import('jquery').then($ => {
-            window.$ = window.jQuery = $.default;
-                
-        });
-    });
-}
-// include netlify cli cdn link
-import netlify from 'netlify-cli';
-
 {
   "configurations": [
     {
@@ -54,13 +16,3 @@ import netlify from 'netlify-cli';
     }
   ]
 }
-  
-// Importing netlify-handler-functions  for making HTTP requests
-
-// Importing GSAP for animations
-
-// Importing FontAwesome for icons
-
-// Adding FontAwesome icons to the library
-library.add(faFacebookF, faInstagram, faGithub);
-dom.watch();
