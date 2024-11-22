@@ -112,5 +112,25 @@
     <script src="./js/script.js"></script>
     <script src="./js/nav.js"></script>
     <script src="./js/animate.js"></script>
+    <script type="module">
+      import { sendContactEmail, sendReplyEmail } from './EmailTemplate.js';
+
+      document.getElementById('contactForm').addEventListener('submit', async function(event) {
+        event.preventDefault();
+        
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        try {
+          await sendContactEmail(name, email, message);
+          await sendReplyEmail(email);
+          alert('Your message has been sent successfully.');
+        } catch (error) {
+          console.error('Error sending email:', error);
+          alert('There was an error sending your message. Please try again later.');
+        }
+      });
+    </script>
   </body>
 </html>
