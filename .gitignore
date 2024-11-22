@@ -43,3 +43,7 @@ jspm_packages/
 # Windows
 Thumbs.db
 ehthumbs.db
+
+# etc ...
+index.ts
+index.mts
