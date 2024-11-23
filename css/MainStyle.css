@@ -1,28 +1,37 @@
 /* Importing external resources */
 @import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+
+/* CSS Variables */
+:root {
+    --primary-color: #f9f8f6;
+    --secondary-color: #333;
+    --highlight-color: #39ff14;
+    --font-family: "Roboto", Arial, sans-serif;
+    --font-size-large: 1.75em;
+    --font-size-medium: 1.5em;
+    --font-size-small: 1em;
+    --transition-duration: 0.3s;
+}
+
 /* Global Styles */
-*, 
-*::before, 
-*::after {
+*, *::before, *::after {
     box-sizing: border-box;
 }
 body {
     z-index: -10;
-    font-family: "Roboto", Arial, sans-serif;
+    font-family: var(--font-family);
     line-height: normal;
     letter-spacing: larger;
     min-height: 400px;
-    height: fit-content;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    color: #f9f8f6;
+    color: var(--primary-color);
 }
+
 /* Typography */
-h1, 
-h2, 
-h3, 
-p {
+h1, h2, h3, p {
     margin-bottom: 1rem;
 }
 h1 {
@@ -33,33 +42,34 @@ h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 h2 {
-    font-size: 1.75em;
+    font-size: var(--font-size-large);
     font-weight: 600;
 }
 h3 {
-    font-size: 1.5em;
+    font-size: var(--font-size-medium);
     font-weight: 500;
 }
 p {
-    font-size: 1em;
+    font-size: var(--font-size-small);
     font-weight: 400;
 }
+
 /* Layout */
 .main-content {
     flex: 1 0 auto;
     padding: 2rem;
 }
+
 /* Navigation styles */
-.nav-container, 
-.navbar {
-    background-color: #333;
+.nav-container, .navbar {
+    background-color: var(--secondary-color);
     color: white;
 }
 .nav-container {
     padding: 1rem;
 }
 .logo {
-    font-size: 1em;
+    font-size: var(--font-size-small);
     font-weight: 600;
     text-align: center;
     padding: 20px;
@@ -69,7 +79,7 @@ p {
     color: white;
     text-decoration: none;
     margin-right: 1rem;
-    transition: transform 0.3s, box-shadow 0.3s, color 0.3s, background 0.3s;
+    transition: transform var(--transition-duration), box-shadow var(--transition-duration), color var(--transition-duration), background var(--transition-duration);
 }
 .nav-link:hover {
     transform: translateY(-5px) rotateY(10deg);
@@ -106,6 +116,7 @@ p {
     color: white;
     cursor: pointer;
 }
+
 /* Footer styles */
 .footer {
     background: linear-gradient(45deg, #3498db, #2980b9);
@@ -124,12 +135,7 @@ p {
     left: 0;
     right: 0;
     height: 100%;
-    background: linear-gradient(
-    to right, 
-    rgba(255, 255, 255, 0.1) 0%,
-    rgba(255, 255, 255, 0.2) 50%,
-    rgba(255, 255, 255, 0.1) 100%
-    );
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 100%);
     transform: skewY(-5deg);
     transform-origin: top right;
 }
@@ -152,35 +158,38 @@ p {
     font-size: 1.5rem;
     color: white;
     text-decoration: none;
-    transition: transform 0.3s, color 0.3s;
+    transition: transform var(--transition-duration), color var(--transition-duration);
 }
 .social-link:hover {
     transform: translateY(-5px);
     color: #ecf0f1;
 }
+
 /* About Section Styles */
 .about-section {
     background-color: rgba(0, 0, 0, 0.3);
     padding: 2rem;
     border-radius: 10px;
     margin-bottom: 2rem;
-    color: #39ff14;
+    color: var(--highlight-color);
     font-size: 25px;
     font-weight: 700;
 }
+
 /* Blog Section Styles */
 .blog-section {
     max-width: 800px;
     margin: 2rem auto;
     padding: 20px;
 }
+
 /* Blog Post Styles */
 .blog-post {
     background-color: rgba(0, 0, 0, 0.7);
-    border-left: 5px solid #39ff14;
+    border-left: 5px solid var(--highlight-color);
     padding: 15px;
     border-radius: 10px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: transform var(--transition-duration) ease, background-color var(--transition-duration) ease;
     position: relative;
     overflow: hidden;
     margin-bottom: 20px;
@@ -197,8 +206,7 @@ p {
     animation: pulse 0.5s linear;
 }
 @keyframes pulse {
-    0%, 
-    100% {
+    0%, 100% {
         transform: scale(1);
     }
     50% {
@@ -215,10 +223,9 @@ p {
 .read-more:hover {
     text-decoration: underline;
 }
+
 /* Contact form styles */
-input[type="text"], 
-select, 
-textarea {
+input[type="text"], select, textarea {
     display: flex;
     width: 100%;
     padding: 10px;
@@ -230,8 +237,7 @@ textarea {
     margin-bottom: 16px;
     resize: vertical;
 }
-input[type="text"]:focus, 
-input[type="email"]:focus {
+input[type="text"]:focus, input[type="email"]:focus {
     background-color: #a2035dd1;
 }
 input[type="submit"] {
@@ -247,13 +253,7 @@ input[type="submit"]:hover {
 }
 .container {
     border-radius: 5px;
-    background: linear-gradient(
-    135deg, 
-    #ffcc33 0%, 
-    #ff66cc 25%, 
-    #cc33ff 50%, 
-    #33ccff 100%
-    );
+    background: linear-gradient(135deg, #ffcc33 0%, #ff66cc 25%, #cc33ff 50%, #33ccff 100%);
 }
 .form-wrapper {
     display: flex;
@@ -266,8 +266,7 @@ input[type="submit"]:hover {
     padding: 20px 30px;
     background-color: hsl(210, 68%, 62%);
 }
-.noBotNet, 
-.botCheck {
+.noBotNet, .botCheck {
     display: none;
 }
 .contact-form-send {
@@ -280,7 +279,7 @@ input[type="submit"]:hover {
 .contact-form-send:hover {
     background-color: #4f46e5;
     color: #ffdf10;
-    transition: ease-out 0.3s, ease-in 0.3s;
+    transition: ease-out var(--transition-duration), ease-in var(--transition-duration);
 }
 .contact-form-send:focus {
     background-color: #4f46e5;
@@ -292,10 +291,11 @@ input[type="submit"]:hover {
 .contact-label {
     display: block;
     margin-bottom: 0;
-    font-size: 1em;
+    font-size: var(--font-size-small);
     font-weight: 500;
     color: #d61773;
 }
+
 /* Media Queries */
 @media (max-width: 768px) {
     body {
@@ -324,7 +324,7 @@ input[type="submit"]:hover {
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: #333;
+        background-color: var(--secondary-color);
     }
     .nav-menu.show {
         display: flex;
@@ -338,10 +338,7 @@ input[type="submit"]:hover {
         width: 100%;
         margin-right: 0;
     }
-    .footer, 
-    .about-section, 
-    .blog-section, 
-    .blog-post {
+    .footer, .about-section, .blog-section, .blog-post {
         padding: 1rem;
     }
     .footer-header {
@@ -353,9 +350,7 @@ input[type="submit"]:hover {
     .social-link {
         font-size: 1rem;
     }
-    input[type="text"], 
-    input[type="email"], 
-    textarea {
+    input[type="text"], input[type="email"], textarea {
         padding: 10px;
     }
 }
@@ -378,16 +373,10 @@ input[type="submit"]:hover {
         font-size: 1.35em;
         margin-bottom: 2rem;
     }
-    .contact-form-send, 
-    .contact-label, 
-    input[type="text"], 
-    select, 
-    textarea {
+    .contact-form-send, .contact-label, input[type="text"], select, textarea {
         font-size: 1.25em;
     }
-    input[type="text"], 
-    select, 
-    textarea {
+    input[type="text"], select, textarea {
         padding: 1rem;
     }
 }
@@ -396,7 +385,7 @@ input[type="submit"]:hover {
         background-color: #1a202c;
     }
 }
-/* form style end  */
+
 /* Image Slider Styles */
 .slider {
     position: relative;
@@ -436,12 +425,12 @@ input[type="submit"]:hover {
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background var(--transition-duration);
 }
 .slider .manual-btn:not(:last-child) {
     margin-right: 10px;
 }
-.slider :where , .manual-btn:hover {
+.slider :where, .manual-btn:hover {
     background: #ffffff;
 }
 #radio1:checked :has .first {
@@ -456,6 +445,7 @@ input[type="submit"]:hover {
 #radio4:checked ~ .first {
     transform: translateX(-300%);
 }
+
 /* Automatic Navigation */
 @keyframes slide {
     0% {
@@ -534,3 +524,65 @@ input[type="submit"]:hover {
     transform: translateX(-100%);
     animation: slide 45000ms infinite linear;
 }
+
+/* style the scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+/* now for edge
+ */
+::-ms-scrollbar {
+    width: 10px;
+}
+::-ms-scrollbar-track {
+    background: #f1f1f1;
+}   
+::-ms-scrollbar-thumb {
+    background: #888;
+}
+::-ms-scrollbar-thumb:hover {
+    background: #555;
+}
+/* now for firefox
+ */
+scrollbar-width: thin;
+scrollbar-color: #888 #f1f1f1;
+/* now for opera
+ */
+::-o-scrollbar {
+    width: 10px;
+}
+::-o-scrollbar-track {
+    background: #f1f1f1;
+}
+::-o-scrollbar-thumb {
+    background: #888;
+}
+::-o-scrollbar-thumb:hover {
+    background: #555;
+}
+/* lastly for firefox */
+  @mz-scrollbar {
+    width: 10px;
+}
+@mz-scrollbar-track {
+    background: #f1f1f1;
+}
+@mz-scrollbar-thumb {
+    background: #888;
+}
+@mz-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+/* Dark Mode */

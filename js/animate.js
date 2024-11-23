@@ -1,16 +1,20 @@
 // Function to animate the nav menu collapse and expand
 async function animateMenuIn() {
     const navMenu = document.querySelector('.nav-menu');
-    navMenu.classList.remove('fadeOut'); // Remove any fade-out class
-    navMenu.classList.add('fadeIn', 'show'); // Add fade-in and show classes
+    if (!navMenu.classList.contains('fadeIn')) {
+        navMenu.classList.remove('fadeOut'); // Remove any fade-out class
+        navMenu.classList.add('fadeIn', 'show'); // Add fade-in and show classes
+    }
 }
 
 async function animateMenuOut() {
     const navMenu = document.querySelector('.nav-menu');
-    navMenu.classList.remove('fadeIn'); // Remove any fade-in class
-    navMenu.classList.add('fadeOut'); // Add fade-out class
-    await new Promise(resolve => setTimeout(resolve, 2500)); // Wait for 1.5 seconds for the fade-out animation
-    navMenu.classList.remove('show'); // Ensure the menu is hidden after fade-out
+    if (!navMenu.classList.contains('fadeOut')) {
+        navMenu.classList.remove('fadeIn'); // Remove any fade-in class
+        navMenu.classList.add('fadeOut'); // Add fade-out class
+        await new Promise(resolve => setTimeout(resolve, 2500)); // Wait for 1.5 seconds for the fade-out animation
+        navMenu.classList.remove('show'); // Ensure the menu is hidden after fade-out
+    }
 }
 
 // Toggle mobile menu on hamburger click

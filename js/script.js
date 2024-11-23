@@ -37,7 +37,9 @@ function applyBlurAndFilter() {
       backgroundImage !== "none" ||
       color !== "rgb(0, 0, 0)"
     ) {
-      el.style.filter = "blur(5px) brightness(0.8)";
+      if (el.style.filter !== "blur(5px) brightness(0.8)") {
+        el.style.filter = "blur(5px) brightness(0.8)";
+      }
     }
   });
 }

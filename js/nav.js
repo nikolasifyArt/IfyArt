@@ -1,7 +1,3 @@
-
-
-
-
 // Carousel functionality
 const carousel = document.getElementById("carousel");
 const figures = carousel.getElementsByTagName("figure");

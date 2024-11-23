@@ -1,18 +1,33 @@
-// Send an email with the Postmark.js library
+//     EXAMPLE OF SEND EMAIL WITH POSTMARK WITH ES5
+// var postmark = require("postmark");
+// var serverToken = "xxxx-xxxxx-xxxx-xxxxx-xxxxxx";
+// var client = new postmark.ServerClient(serverToken);
 
-// Install with npm from the command line:
-// npm install postmark --save
+// client.sendEmail(
+//     {
+//         From: "igor@activecampaign.com",
+//         To: "igor@activecampaign.com",
+//         Subject: "Hello from Postmark!",
+//         HtmlBody: "Hello message body."
+//     }
+// , function(err, data) {
+//         console.log(err)
+//         console.log(data) });
 
-// Require:
-// import { ServerClient } from "postmark";
+//     EXAMPLE OF SEND EMAIL WITH POSTMARK WITH ES6
+// import * as postmark from "postmark";
+// const serverToken = "xxxx-xxxxx-xxxx-xxxxx-xxxxxx";
+// let client = new postmark.ServerClient(serverToken);
 
-// // Send an email:
-// var client = new ServerClient("d91a8442-714f-43ea-ad09-78a3da6c47e0");
-
-// client.sendEmailWithTemplate({
-//   "From": "sender@example.com",
-//   "To": "myemail@adress.com",
-//   "TemplateAlias": "code-your-own-1",
-//   "TemplateModel": {
-//   }
+// client.sendEmail(
+//     {
+//         From: "igor@example.com",
+//         To: "chris@example.com",
+//         Subject: "Hello from Postmark!",
+//         HtmlBody: "Hello message body."
+//     }
+// ).then(response => {
+//     console.log("Sending message");
+//     console.log(response.To);
+//     console.log(response.Message);
 // });

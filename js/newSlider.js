@@ -1,11 +1,9 @@
-let slider = document.querySelector(".slider");
-let wrapper = document.querySelector(".wrapper");
-let next = document.querySelector(".arrow-next");
-let prev = document.querySelector(".arrow-prev");
-let item = document.querySelectorAll(".item");
-let currdeg = 0;
-let active = 0;
-
+const slider = document.querySelector(".slider");
+const wrapper = document.querySelector(".wrapper");
+const next = document.querySelector(".arrow-next");
+const prev = document.querySelector(".arrow-prev");
+const item = document.querySelectorAll(".item");
+const currdeg = 0;
 next.addEventListener("click", () => {
   slider.classList.toggle("zoom");
 
