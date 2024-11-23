@@ -353,6 +353,12 @@ input[type="submit"]:hover {
     input[type="text"], input[type="email"], textarea {
         padding: 10px;
     }
+    .showcase-header {
+        font-size: 1.5rem;
+    }
+    .showcase-slide img {
+        border-radius: 5px;
+    }
 }
 @media screen and (min-width: 1024px) {
     .form-wrapper {
@@ -584,5 +590,48 @@ scrollbar-color: #888 #f1f1f1;
     background: #555;
 }
 
+/* Showcase Section Styles */
+.showcase {
+  margin-top: 2rem;
+  text-align: center;
+}
+.showcase-header {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.showcase-slider {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.showcase-slide {
+  min-width: 100%;
+  transition: transform 1s ease-in-out;
+}
+.showcase-slide img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Keyframes for rotating images */
+@keyframes rotateShowcase {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(0); }
+  25% { transform: translateX(-100%); }
+  45% { transform: translateX(-100%); }
+  50% { transform: translateX(-200%); }
+  70% { transform: translateX(-200%); }
+  75% { transform: translateX(-300%); }
+  95% { transform: translateX(-300%); }
+  100% { transform: translateX(-400%); }
+}
+
+.showcase-slider {
+  animation: rotateShowcase 20s infinite;
+}
 
 /* Dark Mode */

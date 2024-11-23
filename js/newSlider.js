@@ -7,7 +7,7 @@ const currdeg = 0;
 next.addEventListener("click", () => {
   slider.classList.toggle("zoom");
 
-  currdeg = currdeg - 120;
+  currdeg -= 120;
 
   if (active === item.length - 1) {
     active = 0;
@@ -21,7 +21,7 @@ next.addEventListener("click", () => {
 prev.addEventListener("click", () => {
   slider.classList.toggle("zoom");
 
-  currdeg = currdeg + 120;
+  currdeg += 120;
 
   if (active === 0) {
     active = item.length - 1;
@@ -32,14 +32,14 @@ prev.addEventListener("click", () => {
   toggle();
 });
 
-let toggle = () => {
+const toggle = () => {
   setTimeout(() => {
-    for (let i = 0; i < item.length; i++) {
-      item[i].classList.remove("active");
+    for (const galleryItem of item) {
+      galleryItem.classList.remove("active");
     }
 
     item[active].classList.add("active");
-    wrapper.style.transform = "rotateY(" + currdeg + "deg)";
+    wrapper.style.transform = `rotateY(${currdeg}deg)`;
   }, 900);
 
   setTimeout(() => {

@@ -24,6 +24,10 @@ jspm_packages/
 .env
 .env.test
 .env.production
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # Netlify functions build
 .netlify/
@@ -44,6 +48,32 @@ jspm_packages/
 Thumbs.db
 ehthumbs.db
 
+# Sensitive configuration files
+config/
+secrets/
+credentials/
+
+# Build output
+dist/
+build/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Coverage directory used by testing tools
+coverage/
+
+# Other
+*.pid
+*.seed
+*.pid.lock
+
 # etc ...
 index.ts
 index.mts
+
+
+_redirects
+API

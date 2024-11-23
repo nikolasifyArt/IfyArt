@@ -9,12 +9,13 @@ async function animateMenuIn() {
 
 async function animateMenuOut() {
     const navMenu = document.querySelector('.nav-menu');
-    if (!navMenu.classList.contains('fadeOut')) {
-        navMenu.classList.remove('fadeIn'); // Remove any fade-in class
-        navMenu.classList.add('fadeOut'); // Add fade-out class
-        await new Promise(resolve => setTimeout(resolve, 2500)); // Wait for 1.5 seconds for the fade-out animation
-        navMenu.classList.remove('show'); // Ensure the menu is hidden after fade-out
+    if (navMenu.classList.contains('fadeOut')) {
+        return;
     }
+    navMenu.classList.remove('fadeIn'); // Remove any fade-in class
+    navMenu.classList.add('fadeOut'); // Add fade-out class
+    await new Promise(resolve => setTimeout(resolve, 2500)); // Wait for 1.5 seconds for the fade-out animation
+    navMenu.classList.remove('show'); // Ensure the menu is hidden after fade-out
 }
 
 // Toggle mobile menu on hamburger click
