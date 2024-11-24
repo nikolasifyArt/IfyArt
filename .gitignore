@@ -77,3 +77,19 @@ index.mts
 
 _redirects
 API
+
+netlify/functions/tsconfig.json
+netlify/functions/package.json
+netlify/functions/package-lock.json
+netlify/functions/tsconfig.json
+netlify/functions/.env
+netlify/functions/.env.development
+netlify/functions/.env.production
+netlify/functions/.env.test
+netlify/functions/.env.local
+netlify/functions/.env.development.local
+netlify/functions/.env.production.local
+netlify/functions/.env.test.local
+netlify/functions/.env.staging
+netlify/functions/.env.staging.local
+netlify/functions/.env.staging.production
