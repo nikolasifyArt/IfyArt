@@ -8,9 +8,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
+    "nodemailer": "^6.9.16",
     "postmark": "^4.0.5",
     "three": "^0.170.0"
-  }
+  },
+  "description": ""
 }

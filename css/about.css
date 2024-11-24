@@ -1,7 +1,4 @@
-*::before,
-*::after {
-  box-sizing: border-box !important;
-}
+
 
 .section-header-text {
   font-size: 2.5rem;
@@ -16,7 +13,7 @@
 .section-header-text::after {
   content: "";
   display: block;
-  width: 100%;
+
   height: 1px;
   background: #333;
 }
