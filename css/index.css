@@ -20,7 +20,7 @@
 
 .slide > img {
     max-height: 500px !important;
-    max-width: 100%  !important;
+    max-width: 500px  !important;
 }
 .slide {
     border-bottom: 10px solid #333;
