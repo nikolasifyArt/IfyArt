@@ -1,110 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--  somne prefix fallback  suppert for  older versions  -->
+    <script type="" src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?version=4.8.0&features=default%2Cdom4%2Ces2015%2Ces2016%2Ces2017%2Ces2018%2Ces2019%2Ces2020%2Ces2021%2Ces2022%2Ces2023%2Ces5%2Ces6%2Ces7%2CAbortController%2CAggregateError%2CArray.from%2CArray.of%2CArray.prototype.%40%40iterator%2CArray.prototype.at%2CArray.prototype.copyWithin%2CArray.prototype.entries%2CArray.prototype.fill%2CArray.prototype.find%2CArray.prototype.findIndex%2CArray.prototype.findLast%2CArray.prototype.findLastIndex%2CArray.prototype.flat%2CArray.prototype.flatMap%2CArray.prototype.includes%2CArray.prototype.keys%2CArray.prototype.sort%2CArray.prototype.toReversed%2CArray.prototype.toSorted%2CArray.prototype.toSpliced%2CArray.prototype.values%2CArray.prototype.with%2CArrayBuffer%2CArrayBuffer.isView%2CArrayBuffer.prototype.%40%40toStringTag%2CAudioContext%2CBlob%2CCSS.supports%2CCharacterData.prototype.after%2CCharacterData.prototype.before%2CCharacterData.prototype.nextElementSibling%2CCharacterData.prototype.previousElementSibling%2CCharacterData.prototype.remove%2CCharacterData.prototype.replaceWith%2CDOMTokenList.prototype.forEach%2CDOMTokenList%2CDocumentFragment%2CElement.prototype.classList%2CMath.cbrt%2CMath.clz32%2CMath.cosh%2CMath.expm1%2CMath.fround%2CMath.log10%2CMath.log1p%2CMath.log2%2CMath.sign%2CMutationObserver%2CNode.prototype.contains%2CNode.prototype.getRootNode%2CNode.prototype.isConnected%2CNode.prototype.isSameNode%2CNodeList.prototype.%40%40iterator%2CNodeList.prototype.forEach%2CNumber.Epsilon%2CNumber.MAX_SAFE_INTEGER%2CNumber.MIN_SAFE_INTEGER%2CNumber.isFinite%2CNumber.isInteger%2CNumber.isNaN%2CNumber.isSafeInteger%2CNumber.parseFloat%2CNumber.parseInt%2CObject.assign%2CObject.entries%2CObject.freeze%2CObject.fromEntries%2CObject.getOwnPropertyDescriptor%2CObject.getOwnPropertyDescriptors%2CObject.getOwnPropertyNames%2CObject.hasOwn%2CObject.is%2CObject.isExtensible%2CObject.isFrozen%2CObject.isSealed%2CObject.keys%2CObject.preventExtensions%2CObject.prototype.toString%2CObject.seal%2CObject.setPrototypeOf%2CObject.values%2CPromise%2CPromise.allSettled%2CPromise.any%2CPromise.prototype.finally%2CReflect%2CReflect.apply%2CReflect.construct%2CReflect.deleteProperty%2CReflect.defineProperty%2CCustomEvent%2CDOMRect%2CDOMRect.fromRect%2CDOMTokenList.prototype.%40%40iterator%2CDOMTokenList.prototype.replace%2CDocumentFragment.prototype.append%2CDocumentFragment.prototype.prepend%2CDocumentFragment.prototype.replaceChildren%2CElement.prototype.after%2CElement.prototype.append%2CElement.prototype.before%2CElement.prototype.closest%2CElement.prototype.dataset%2CElement.prototype.getAttributeNames%2CElement.prototype.matches%2CElement.prototype.placeholder%2CElement.prototype.prepend%2CElement.prototype.remove%2CElement.prototype.replaceChildren%2CElement.prototype.replaceWith%2CElement.prototype.toggleAttribute%2CError.cause%2CEvent%2CEvent.focusin%2CEvent.hashchange%2CEventSource%2CFunction.prototype.name%2CHTMLCanvasElement.prototype.toBlob%2CHTMLCollection.prototype.%40%40iterator%2CHTMLDocument%2CHTMLElement.prototype.inert%2CHTMLFormElement.prototype.requestSubmit%2CHTMLInputElement.prototype.valueAsDate%2CHTMLPictureElement%2CHTMLSelectElement.prototype.selectedOptions%2CHTMLTemplateElement%2CIntersectionObserver%2CIntersectionObserverEntry%2CIntl.DateTimeFormat%2CIntl.DisplayNames%2CIntl.ListFormat%2CIntl.Locale%2CIntl.NumberFormat%2CIntl.PluralRules%2CIntl.RelativeTimeFormat%2CIntl.getCanonicalLocales%2CMap%2CMath.acosh%2CMath.asinh%2CMath.hypot%2CMath.imul%2CMath.sinh%2CMath.tanh%2CMath.trunc%2CMediaQueryList.prototype.addEventListener%2CReflect.get%2CReflect.getOwnPropertyDescriptor%2CReflect.getPrototypeOf%2CReflect.has%2CReflect.isExtensible%2CReflect.ownKeys%2CReflect.preventExtensions%2CReflect.set%2CReflect.setPrototypeOf%2CRegExp.prototype.%40%40matchAll%2CRegExp.prototype.flags%2CResizeObserver%2CSet%2CString.fromCodePoint%2CString.prototype.%40%40iterator%2CString.prototype.at%2CString.prototype.codePointAt%2CString.prototype.endsWith%2CString.prototype.includes%2CString.prototype.matchAll%2CString.prototype.normalize%2CString.prototype.padEnd%2CString.prototype.padStart%2CString.prototype.repeat%2CString.prototype.replaceAll%2CString.prototype.startsWith%2CString.prototype.trim%2CString.prototype.trimEnd%2CString.prototype.trimStart%2CString.raw%2CSymbol%2CSymbol.asyncIterator%2CSymbol.hasInstance%2CSymbol.isConcatSpreadable%2CSymbol.iterator%2CSymbol.match%2CSymbol.matchAll%2CSymbol.prototype.description%2CSymbol.replace%2CSymbol.search%2CSymbol.species%2CSymbol.split%2CSymbol.toPrimitive%2CSymbol.toStringTag%2CSymbol.unscopables%2CTextEncoder%2CTypedArray.prototype.%40%40iterator%2CTypedArray.prototype.%40%40toStringTag%2CTypedArray.prototype.at%2CTypedArray.prototype.entries%2CTypedArray.prototype.findLast%2CTypedArray.prototype.findLastIndex%2CTypedArray.prototype.keys%2CTypedArray.prototype.sort%2CTypedArray.prototype.toLocaleString%2CTypedArray.prototype.toReversed%2CTypedArray.prototype.toSorted%2CTypedArray.prototype.toString%2CTypedArray.prototype.values%2CTypedArray.prototype.with%2CURL%2CURL.prototype.toJSON%2CUserTiming%2CWeakMap%2CWeakSet%2CWebAnimations%2Catob%2Cconsole%2Cconsole.assert%2Cconsole.clear%2Cconsole.count%2Cconsole.debug%2Cconsole.dir%2Cconsole.dirxml%2Cconsole.error%2Cconsole.exception%2Cconsole.group%2Cconsole.groupCollapsed%2Cconsole.groupEnd%2Cconsole.info%2Cconsole.log%2Cconsole.markTimeline%2Cconsole.profile%2Cconsole.profileEnd%2Cconsole.profiles%2Cconsole.table%2Cconsole.time%2Cconsole.timeEnd%2Cconsole.timeStamp%2Cconsole.timeline%2Cconsole.timelineEnd%2Cconsole.trace%2Cconsole.warn%2CdevicePixelRatio%2Cdocument.currentScript%2Cdocument.elementsFromPoint%2Cdocument.visibilityState%2Cfetch%2CglobalThis%2Clocation.origin%2CmatchMedia%2Cnavigator.sendBeacon%2Cperformance.now%2CqueueMicrotask%2CrequestAnimationFrame%2CrequestIdleCallback%2Cscreen.orientation%2CsetImmediate%2Csmoothscroll%2CstructuredClone%2C%7Ehtml5-elements
+"></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-W5WBNNFJ');</script>
-  <!-- End Google Tag Manager -->
-  <!-- emailjs cdn  -->
-  <link rel="stylesheet" href="./css/MainStyle.css" />
-  <link rel="stylesheet" type="text/css" href="./css/background.css" />
-  <!-- font awesome cdn start -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <!-- font awesome cdn end -->
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact Form</title>
-  <script src="./js/script.js"></script>
-</head>
+    <title>Contact Form</title>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin: 0 auto;
+      }
+      label {
+        margin-bottom: 5px;
+      }
+      input,
+      button {
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Contact Us</h1>
+    <form id="contact-form">
+      <label for="firstName" style="color: blue">First Name:</label>
+      <input type="text" id="firstName" name="firstName" required />
 
-<body>
-  <nav class="navbar">
-    <div class="nav-container">
-      <div class="logo">
-        <a href="index.html" class="nav-link">Art Gallery Portfolio</a>
-      </div>
-      <ul class="nav-menu">
-        <li class="nav-item">
-          <a href="index.html" class="nav-link">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="about.html" class="nav-link">About</a>
-        </li>
-        <li class="nav-item">
-          <a href="contact.html" class="nav-link">Contact</a>
-        </li>
-      </ul>
-    </div>
-    <button type="button" id="burger" class="hamburger">☰</button>
-  </nav>
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" required />
 
-  <!-- form start -->
-  <div class="form-wrapper">
-    <form id="contactForm" class="needs-validation">
-      <input type="hidden" name="access_key" value="My-access-key-here" />
-      <input type="hidden" name="subject" value="New Submission" />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
 
-      <label for="botcheck" class="botCheck">Bot Check</label>
-      <input type="checkbox" name="botcheck" id="botcheck" class="noBotNet"
-        title="Please check this box to confirm you are not a bot" />
+      <label for="countryCode">Country Code:</label>
+      <input type="text" id="countryCode" name="countryCode" required />
 
-      <label for="fname" class="contact-label">Please Provide your First Name</label>
-      <input type="text" id="first_name" name="name" placeholder="First Name" required />
+      <label for="phoneNumber">Phone Number:</label>
+      <input type="tel" id="phoneNumber" name="phoneNumber" required />
 
-      <input type="hidden" name="hidden_field" />
-      <input type="hidden" name="_gotcha" class="hidden-input" />
-      <label for="lname" class="contact-label">Please Provide your Last Name:</label>
-      <input type="text" id="lname" name="last_name" placeholder="Last Name" required />
-
-      <label for="email" class="contact-label">Please Provide Your Email Address</label>
-      <input type="email" id="email" name="email" placeholder="you@company.com" required />
-
-      <label for="country_code" class="contact-label">Country Code</label>
-      <select id="country_code" name="country_code" required>
-        <option value="+1">United States (+1)</option>
-        <option value="+44">United Kingdom (+44)</option>
-        <option value="+91">India (+91)</option>
-        <!-- Add more country codes as needed -->
-      </select>
-
-      <label for="phone">Phone number</label>
-      <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required />
-      <label for="comments" class="contact-label">Add any additional information:</label>
-      <textarea rows="5" id="comment" name="message" placeholder="Write something.."></textarea>
-
-      <button type="button" onclick="handleFormSubmission()" class="contact-form-send" id="submit" name="submit">
-        Send
-      </button>
+      <button type="submit">Submit</button>
     </form>
-    <!-- form end -->
-  </div>
 
-  <footer class="footer">
-    <div class="footer-content">
-      <h3 class="footer-header">
-        Connect With me to Create A Custom Spacial Highly Developed SKills
-        that i Assure you any Ai couldn't to copy
-      </h3>
-      <div class="social-links">
-        <a href="https://www.facebook.com/Nikolasifyxart" class="social-link"><i class="fab fa-facebook-f"></i>
-          facebook</a>
-        <a href="https://www.instagram.com/nikolasify_art/" class="social-link"><i
-            class="fab fa-instagram"></i>Instagram</a>
-        <a href="https://github.com/nikolasifyArt" class="social-link"><i class="fab fa-github"></i> GitHub</a>
-      </div>
-    </div>
-  </footer>
-  <script src="./js/contact.js"></script>
-  <script src="./js/script.js"></script>
-  <script src="./js/nav.js"></script>
-  <script src="./js/animate.js"></script>
-</body>
+    <script>
+      const form = document.getElementById("contact-form");
+      form.addEventListener("submit", async (event) => {
+        event.preventDefault();
 
+        const firstName = document.getElementById("firstName").value;
+        const lastName = document.getElementById("lastName").value;
+        const email = document.getElementById("email").value;
+        const countryCode = document.getElementById("countryCode").value;
+        const phoneNumber = document.getElementById("phoneNumber").value;
+
+        try {
+          const response = await fetch("/submit-contact", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              firstName,
+              lastName,
+              email,
+              countryCode,
+              phoneNumber,
+            }),
+          });
+
+          if (response.ok) {
+            alert("Contact form submitted successfully!");
+            form.reset();
+          } else {
+            alert("Error submitting contact form.");
+          }
+        } catch (error) {
+          console.error("Error:", error);
+          alert("Error submitting contact form.");
+        }
+      });
+    </script>
+    <script src="../../js/animate.js"></script>
+    <script src="../../js/script.js"></script>
+    <script src="../../js/newSlider.js"></script>
+  </body>
 </html>
