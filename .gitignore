@@ -3,6 +3,11 @@ node_modules/
 npm-debug.log
 yarn-error.log
 
+# databases
+database
+database/contact_form_db.sql
+database/customer_conact_forrm_db_get.js
+
 # Logs
 logs/
 *.log
