@@ -13,4 +13,4 @@ function showNextImage() {
   figures[currentIndex].classList.add("active");
 }
 
-setInterval(showNextImage, 10000); // Change image every 5 seconds
+setInterval(showNextImage, 10_000); // Change image every 5 seconds
