@@ -48,3 +48,13 @@ jspm_packages/
 # Windows
 Thumbs.db
 ehthumbs.db
+
+# Config files
+config.js
+config.json
+config/
+
+
+# coverage reports
+./test/coverage
+../build/coverage
