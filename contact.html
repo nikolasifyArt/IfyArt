@@ -14,10 +14,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Contact Form</title>
     <script src="./js/script.js"></script>
-   
   </head>
 
   <body>
+    <!-- navbar start -->
     <nav class="navbar">
       <div class="nav-container">
         <div class="logo">
@@ -37,11 +37,22 @@
       </div>
       <button type="button" id="burger" class="hamburger">☰</button>
     </nav>
-        <div class="section">
-          <div class="contact-me-section">
-          
-          </div>
-        </div>
+    <div class="section">
+      <div class="contact-me-section"></div>
+    </div>
+
+    <!--  navbar end -->
+
+    <!-- contact details start  -->
+     <section class="contact-details-section">
+      <main class="contact-details-main-container">
+
+      </main>
+
+     </section>
+
+    <!-- contact details end -->
+    <!-- footer start -->
     <footer class="footer">
       <div class="footer-content">
         <h3 class="footer-header">
@@ -63,13 +74,14 @@
         </div>
       </div>
     </footer>
+    <!-- footer end -->
     <script src="./js/contact.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/nav.js"></script>
     <script src="./js/animate.js"></script>
     <script type="module">
       // create a new animation object and pass the target element and the keyframes and the options object to the constructor function  
-      const animate = new Animate(document.querySelector('.contact-me-section'), [
+      const animate = new Animate(document.querySelector('.contact-details-section'), [
         { transform: 'translateX(100%)' },
         { transform: 'translateX(0)' }
       ], {
