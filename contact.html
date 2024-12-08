@@ -68,24 +68,18 @@
     <script src="./js/nav.js"></script>
     <script src="./js/animate.js"></script>
     <script type="module">
-      import { sendContactEmail, sendReplyEmail } from './EmailTemplate.js';
-
-      document.getElementById('contactForm').addEventListener('submit', async function(event) {
-        event.preventDefault();
-        
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
-
-        try {
-          await sendContactEmail(name, email, message);
-          await sendReplyEmail(email);
-          alert('Your message has been sent successfully.');
-        } catch (error) {
-          console.error('Error sending email:', error);
-          alert('There was an error sending your message. Please try again later.');
-        }
+      // create a new animation object and pass the target element and the keyframes and the options object to the constructor function  
+      const animate = new Animate(document.querySelector('.contact-me-section'), [
+        { transform: 'translateX(100%)' },
+        { transform: 'translateX(0)' }
+      ], {
+        duration: 1000,
+        easing: 'ease-in-out',
+        fill: 'forwards'
       });
+
+      // play the animation
+      animate.play();
     </script>
   </body>
 </html>
