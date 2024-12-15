@@ -1,12 +1,183 @@
 /* CSS Variables */
+/* Colors */
 :root {
-  --primary-bg-color: #0b0f11;
-  --navbar-bg-color: #333;
-  --light-bg-color: rgba(255, 255, 255, 0.8);
-  --footer-gradient: linear-gradient(45deg, #3498db, #2980b9);
-  --dark-bg-color: rgb(20, 20, 200);
-   
-  --text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
+  /* blacks */
+  --primary-black-bg-color: #0b0f11;
+  --navbar--black-bg-color: #333;
+  /* blacks */
+  /* end of blacks */
 
-/
+  /* reds */
+  --warm-red: #ff5733;
+  --light-red: #ff6f61;
+  --dark-red: #c0392b;
+  --bright-red: #ff0000;
+  --soft-red: #e57373;
+  --deep-red: #b71c1c;
+  --muted-red: #d32f2f;
+  --vivid-red: #e53935;
+  --pale-red: #ffcdd2;
+  --rich-red: #d50000;
+
+  /* linear gradients reds */
+  --red-shard-1: linear-gradient(45deg, #ff6f61, #ff0000, #ff8a80);
+  --red-shard-2: linear-gradient(45deg, #ff5733, #c0392b, #e74c3c);
+  --red-shard-3: linear-gradient(45deg, #e57373, #b71c1c, #ef5350);
+  --red-shard-4: linear-gradient(45deg, #d32f2f, #e53935, #f44336);
+  --red-shard-5: linear-gradient(45deg, #ffcdd2, #d50000, #ff8a80);
+  --red-shard-6: linear-gradient(45deg, #ff0000, #ff6f61, #ff8a80);
+  --red-shard-7: linear-gradient(45deg, #c0392b, #ff5733, #e74c3c);
+  --red-shard-8: linear-gradient(45deg, #b71c1c, #e57373, #ef5350);
+  --red-shard-9: linear-gradient(45deg, #e53935, #d32f2f, #f44336);
+  --red-shard-10: linear-gradient(45deg, #d50000, #ffcdd2, #ff8a80);
+  /* end of linear gradients of reds */
+  /* end of reds */
+
+  /* whites */
+  --light-bg-color: rgba(255, 255, 255, 0.8);
+  --dark-bg-color: rgb(20, 20, 200);
+  --primary-text-info: #3498db;
+  /* end of whites */
+
+  /* blues */
+  --primary-text-dark-blue: #2980b9;
+  --primary-darker-blue: #1f618d;
+  /* end of blues */
+
+  /* linear-gradients blues */
+  --footer-gradient: linear-gradient(45deg, #3498db, #2980b9);
+  /* end of linear-gradients blues */
+
+  --text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+  /* greens */
+
+  --light-green: #a8e6cf;
+  --medium-green: #56ab2f;
+  --dark-green: #004d00;
+  --lime-green: #32cd32;
+  --forest-green: #228b22;
+  --olive-green: #808000;
+  --mint-green: #98ff98;
+  --sea-green: #2e8b57;
+  --jade-green: #00a86b;
+  --emerald-green: #50c878;
+
+  /* linear gradients greens */
+  --green-shard-1: linear-gradient(45deg, #a8e6cf, #56ab2f, #004d00);
+  --green-shard-2: linear-gradient(45deg, #32cd32, #228b22, #808000);
+  --green-shard-3: linear-gradient(45deg, #98ff98, #2e8b57, #00a86b);
+  --green-shard-4: linear-gradient(45deg, #50c878, #56ab2f, #004d00);
+  --green-shard-5: linear-gradient(45deg, #a8e6cf, #32cd32, #228b22);
+  --green-shard-6: linear-gradient(45deg, #808000, #98ff98, #2e8b57);
+  --green-shard-7: linear-gradient(45deg, #00a86b, #50c878, #56ab2f);
+  --green-shard-8: linear-gradient(45deg, #004d00, #a8e6cf, #32cd32);
+  --green-shard-9: linear-gradient(45deg, #228b22, #808000, #98ff98);
+  --green-shard-10: linear-gradient(45deg, #2e8b57, #00a86b, #50c878);
+  /* end of linear gradients of greens */
+  /* end of greens */
+
+  /* yellows */
+  --light-yellow: #fff9c4;
+  --medium-yellow: #ffeb3b;
+  --dark-yellow: #fbc02d;
+  --golden-yellow: #ffd700;
+  --lemon-yellow: #fff44f;
+  --mustard-yellow: #ffdb58;
+  --sunflower-yellow: #ffc107;
+  --amber-yellow: #ffbf00;
+  --canary-yellow: #ffef00;
+  --honey-yellow: #fdd835;
+
+  /* linear gradients yellows */
+  --yellow-shard-1: linear-gradient(45deg, #fff9c4, #ffeb3b, #fbc02d);
+  --yellow-shard-2: linear-gradient(45deg, #ffd700, #fff44f, #ffdb58);
+  --yellow-shard-3: linear-gradient(45deg, #ffc107, #ffbf00, #ffef00);
+  --yellow-shard-4: linear-gradient(45deg, #fdd835, #ffeb3b, #fbc02d);
+  --yellow-shard-5: linear-gradient(45deg, #fff9c4, #ffd700, #fff44f);
+  --yellow-shard-6: linear-gradient(45deg, #ffdb58, #ffc107, #ffbf00);
+  --yellow-shard-7: linear-gradient(45deg, #ffef00, #fdd835, #ffeb3b);
+  --yellow-shard-8: linear-gradient(45deg, #fbc02d, #fff9c4, #ffd700);
+  --yellow-shard-9: linear-gradient(45deg, #fff44f, #ffdb58, #ffc107);
+  --yellow-shard-10: linear-gradient(45deg, #ffbf00, #ffef00, #fdd835);
+  /* end of linear gradients of yellows */
+  /* end of yellows */
+
+  /* purples */
+  --light-purple: #e1bee7;
+  --medium-purple: #9c27b0;
+  --dark-purple: #6a1b9a;
+  --lavender-purple: #e6e6fa;
+  --violet-purple: #8a2be2;
+  --plum-purple: #dda0dd;
+  --orchid-purple: #da70d6;
+  --grape-purple: #6f2da8;
+  --amethyst-purple: #9966cc;
+  --mauve-purple: #e0b0ff;
+
+  /* linear gradients purples */
+  --purple-shard-1: linear-gradient(45deg, #e1bee7, #9c27b0, #6a1b9a);
+  --purple-shard-2: linear-gradient(45deg, #e6e6fa, #8a2be2, #dda0dd);
+  --purple-shard-3: linear-gradient(45deg, #da70d6, #6f2da8, #9966cc);
+  --purple-shard-4: linear-gradient(45deg, #e0b0ff, #9c27b0, #6a1b9a);
+  --purple-shard-5: linear-gradient(45deg, #e1bee7, #e6e6fa, #8a2be2);
+  --purple-shard-6: linear-gradient(45deg, #dda0dd, #da70d6, #6f2da8);
+  --purple-shard-7: linear-gradient(45deg, #9966cc, #e0b0ff, #9c27b0);
+  --purple-shard-8: linear-gradient(45deg, #6a1b9a, #e1bee7, #e6e6fa);
+  --purple-shard-9: linear-gradient(45deg, #8a2be2, #dda0dd, #da70d6);
+  --purple-shard-10: linear-gradient(45deg, #6f2da8, #9966cc, #e0b0ff);
+  /* end of linear gradients of purples */
+  /* end of purples */
+
+  /* orange */
+  --light-orange: #ffe0b2;
+  --medium-orange: #ff9800;
+  --dark-orange: #e65100;
+  --peach-orange: #ffccbc;
+  --tangerine-orange: #ffa726;
+  --carrot-orange: #ed9121;
+  --pumpkin-orange: #ff7518;
+  --amber-orange: #ffbf00;
+  --burnt-orange: #cc5500;
+  --coral-orange: #ff7f50;
+
+  /* linear gradients orange */
+  --orange-shard-1: linear-gradient(45deg, #ffe0b2, #ff9800, #e65100);
+  --orange-shard-2: linear-gradient(45deg, #ffccbc, #ffa726, #ed9121);
+  --orange-shard-3: linear-gradient(45deg, #ff7518, #ffbf00, #cc5500);
+  --orange-shard-4: linear-gradient(45deg, #ff7f50, #ff9800, #e65100);
+  --orange-shard-5: linear-gradient(45deg, #ffe0b2, #ffccbc, #ffa726);
+  --orange-shard-6: linear-gradient(45deg, #ed9121, #ff7518, #ffbf00);
+  --orange-shard-7: linear-gradient(45deg, #cc5500, #ff7f50, #ff9800);
+  --orange-shard-8: linear-gradient(45deg, #e65100, #ffe0b2, #ffccbc);
+  --orange-shard-9: linear-gradient(45deg, #ffa726, #ed9121, #ff7518);
+  --orange-shard-10: linear-gradient(45deg, #ffbf00, #cc5500, #ff7f50);
+  /* end of linear gradients of orange */
+  /* end of orange */
+
+  /* browns */
+  --light-brown: #d7ccc8;
+  --medium-brown: #8d6e63;
+  --dark-brown: #4e342e;
+  --tan-brown: #d2b48c;
+  --coffee-brown: #6f4e37;
+  --chocolate-brown: #7b3f00;
+  --sandy-brown: #f4a460;
+  --caramel-brown: #af6e4d;
+  --sepia-brown: #704214;
+  --umber-brown: #635147;
+
+  /* linear gradients browns */
+  --brown-shard-1: linear-gradient(45deg, #d7ccc8, #8d6e63, #4e342e);
+  --brown-shard-2: linear-gradient(45deg, #d2b48c, #6f4e37, #7b3f00);
+  --brown-shard-3: linear-gradient(45deg, #f4a460, #af6e4d, #704214);
+  --brown-shard-4: linear-gradient(45deg, #635147, #8d6e63, #4e342e);
+  --brown-shard-5: linear-gradient(45deg, #d7ccc8, #d2b48c, #6f4e37);
+  --brown-shard-6: linear-gradient(45deg, #7b3f00, #f4a460, #af6e4d);
+  --brown-shard-7: linear-gradient(45deg, #704214, #635147, #8d6e63);
+  --brown-shard-8: linear-gradient(45deg, #4e342e, #d7ccc8, #d2b48c);
+  --brown-shard-9: linear-gradient(45deg, #6f4e37, #7b3f00, #f4a460);
+  --brown-shard-10: linear-gradient(45deg, #af6e4d, #704214, #635147);
+  /* end of linear gradients of browns */
+  /* end of browns */
+}

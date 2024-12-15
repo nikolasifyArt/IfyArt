@@ -1,8 +1,8 @@
-let slider = document.querySelector(".slider");
-let wrapper = document.querySelector(".wrapper");
-let next = document.querySelector(".arrow-next");
-let prev = document.querySelector(".arrow-prev");
-let item = document.querySelectorAll(".item");
+const slider = document.querySelector(".slider");
+const wrapper = document.querySelector(".wrapper");
+const next = document.querySelector(".arrow-next");
+const prev = document.querySelector(".arrow-prev");
+const item = document.querySelectorAll(".item");
 let currdeg = 0;
 let active = 0;
 
@@ -34,7 +34,7 @@ prev.addEventListener("click", () => {
   toggle();
 });
 
-let toggle = () => {
+const toggle = () => {
   setTimeout(() => {
     for (let i = 0; i < item.length; i++) {
       item[i].classList.remove("active");
