@@ -34,69 +34,72 @@
     </div>
     <button type="button" class="hamburger">☰</button>
   </nav>
+  
   <!-- Slider Start -->
-  <div class="slider">
-    <!-- Radio buttons for manual navigation -->
-    <input type="radio" name="radio-btn" id="radio1" checked>
-    <input type="radio" name="radio-btn" id="radio2">
-    <input type="radio" name="radio-btn" id="radio3">
-    <input type="radio" name="radio-btn" id="radio4">
-    <input type="radio" name="radio-btn" id="radio5">
-    <input type="radio" name="radio-btn" id="radio6">
-    <input type="radio" name="radio-btn" id="radio7">
-    <input type="radio" name="radio-btn" id="radio8">
-    <input type="radio" name="radio-btn" id="radio9">
-    <input type="radio" name="radio-btn" id="radio10">
-
-    <!-- Slides -->
-    <div class="slides">
-      <div class="slide first">
-        <img src="./documents/1.png" alt="Image 1">
+  <div class="sider-wrapper">
+    <div class="slider">
+      <!-- Radio buttons for manual navigation -->
+      <input type="radio" name="radio-btn" id="radio1" checked>
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+      <input type="radio" name="radio-btn" id="radio5">
+      <input type="radio" name="radio-btn" id="radio6">
+      <input type="radio" name="radio-btn" id="radio7">
+      <input type="radio" name="radio-btn" id="radio8">
+      <input type="radio" name="radio-btn" id="radio9">
+      <input type="radio" name="radio-btn" id="radio10">
+  
+      <!-- Slides -->
+      <div class="slides">
+        <div class="slide first">
+          <img src="./documents/1.png" alt="Image 1">
+        </div>
+        <div class="slide">
+          <img src="./documents/2.jpg" alt="Image 2">
+        </div>
+        <div class="slide">
+          <img src="./documents/3.jpg" alt="Image 3">
+        </div>
+        <div class="slide">
+          <img src="./documents/4.jpg" alt="Image 4">
+        </div>
+        <div class="slide">
+          <img src="./documents/Blind Love.jpg" alt="Image 5">
+        </div>
+        <div class="slide">
+          <img src="./documents/5.jpg" alt="Image 5">
+        </div>
+        <div class="slide">
+          <img src="./documents/6.jpg" alt="Image 6">
+        </div>
+        <div class="slide">
+          <img src="./documents/7.jpg" alt="Image 7">
+        </div>
+        <div class="slide">
+          <img src="./documents/8.jpg" alt="Image 8">
+        </div>
+        <div class="slide">
+          <img src="./documents/9.jpg" alt="Image 9">
+        </div>
+        <div class="slide">
+          <img src="./documents/10.jpg" alt="Image 10">
+        </div>
       </div>
-      <div class="slide">
-        <img src="./documents/2.jpg" alt="Image 2">
+  
+      <!-- Manual navigation -->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn" title="firstSlider"></label>
+        <label for="radio2" class="manual-btn" title=second-slider></label>
+        <label for="radio3" class="manual-btn" title="third slider"></label>
+        <label for="radio4" class="manual-btn" title="forth slider"></label>
+        <label for="radio5" class="manual-btn" title="fifth slider"></label>
+        <label for="radio6" class="manual-btn" title="sixth slider"></label>
+        <label for="radio7" class="manual-btn" title="seventh slider"></label>
+        <label for="radio8" class="manual-btn" title="eighth slider"></label>
+        <label for="radio9" class="manual-btn" title="ninth slider"></label>
+        <label for="radio10" class="manual-btn" title="tenth slider"></label>
       </div>
-      <div class="slide">
-        <img src="./documents/3.jpg" alt="Image 3">
-      </div>
-      <div class="slide">
-        <img src="./documents/4.jpg" alt="Image 4">
-      </div>
-      <div class="slide">
-        <img src="./documents/Blind Love.jpg" alt="Image 5">
-      </div>
-      <div class="slide">
-        <img src="./documents/5.jpg" alt="Image 5">
-      </div>
-      <div class="slide">
-        <img src="./documents/6.jpg" alt="Image 6">
-      </div>
-      <div class="slide">
-        <img src="./documents/7.jpg" alt="Image 7">
-      </div>
-      <div class="slide">
-        <img src="./documents/8.jpg" alt="Image 8">
-      </div>
-      <div class="slide">
-        <img src="./documents/9.jpg" alt="Image 9">
-      </div>
-      <div class="slide">
-        <img src="./documents/10.jpg" alt="Image 10">
-      </div>
-    </div>
-
-    <!-- Manual navigation -->
-    <div class="navigation-manual">
-      <label for="radio1" class="manual-btn" title="firstSlider"></label>
-      <label for="radio2" class="manual-btn" title=second-slider></label>
-      <label for="radio3" class="manual-btn" title="third slider"></label>
-      <label for="radio4" class="manual-btn" title="forth slider"></label>
-      <label for="radio5" class="manual-btn" title="fifth slider"></label>
-      <label for="radio6" class="manual-btn" title="sixth slider"></label>
-      <label for="radio7" class="manual-btn" title="seventh slider"></label>
-      <label for="radio8" class="manual-btn" title="eighth slider"></label>
-      <label for="radio9" class="manual-btn" title="ninth slider"></label>
-      <label for="radio10" class="manual-btn" title="tenth slider"></label>
     </div>
   </div>
   <!-- slider end -->
@@ -106,8 +109,47 @@
     <div class="main-content">
       <h1 class="main-content-header">Welcome to My Art Gallery</h1>
       <p class="main-content-text">I am a self-taught digital artist</p>
+
     </div>
   </div>
+  <!-- Featured Artworks Section Start -->
+  <section class="featured-artworks">
+    <h2 class="section-header">Featured Artworks</h2>
+    <div class="artwork-gallery">
+      <div class="artwork-item">
+        <img src="./documents/featured1.jpg" alt="Featured Artwork 1">
+        <p class="artwork-title">"Sunset Bliss"</p>
+      </div>
+      <div class="artwork-item">
+        <img src="./documents/featured2.jpg" alt="Featured Artwork 2">
+        <p class="artwork-title">"Mystic Forest"</p>
+      </div>
+      <div class="artwork-item">
+        <img src="./documents/featured3.jpg" alt="Featured Artwork 3">
+        <p class="artwork-title">"Urban Dreams"</p>
+      </div>
+    </div>
+  </section>
+  <!-- Featured Artworks Section End -->
+
+  <!-- About the Artist Section Start -->
+  <section class="about-artist">
+    <h2 class="section-header">About the Artist</h2>
+    <p class="artist-bio">
+      Hello! I'm Nikolas, a passionate self-taught digital artist. My journey into the world of art began at a young age, and over the years, I've honed my skills to create unique and captivating pieces. My work is inspired by the beauty of nature, the complexity of human emotions, and the endless possibilities of imagination. I strive to evoke a sense of wonder and inspiration through my art, and I hope you enjoy exploring my gallery as much as I enjoyed creating it.
+    </p>
+  </section>
+  <!-- About the Artist Section End -->
+
+  <!-- Contact Section Start -->
+  <section class="contact-section">
+    <h2 class="section-header">Get in Touch</h2>
+    <p class="contact-text">
+      If you have any questions, comments, or would like to commission a custom piece, please don't hesitate to reach out. I look forward to connecting with you!
+    </p>
+    <a href="contact.html" class="contact-button">Contact Me</a>
+  </section>
+  <!-- Contact Section End -->
   <!-- Main Content Menu ENd  -->
   <!-- FOOTER START -->
   <footer class="footer">

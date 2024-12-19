@@ -430,6 +430,13 @@ input[type="submit"]:hover {
 }
 /* form style end  */
 /* Image Slider Styles */
+.slider-wrapper {
+  max-height: 40vh;
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
 .slider {
   position: relative;
   width: 100%;
