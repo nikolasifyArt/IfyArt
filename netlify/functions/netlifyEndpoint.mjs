@@ -1,0 +1,1 @@
+import netlify from 'netlify-lambda';
