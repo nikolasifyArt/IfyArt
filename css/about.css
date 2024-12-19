@@ -3,7 +3,7 @@
   box-sizing: border-box !important;
 }
 /* min mobile screen size view  */
- @media screen and  (max-width: 400px) and (min-width: 200px) and (min-height: 300px)  {
+@media screen and (max-width: 400px) and (min-width: 200px) and (min-height: 300px) {
   .main-content {
     margin-bottom: 10px;
     width: fit-content;
@@ -37,4 +37,14 @@
   justify-content: center;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.main-content > article {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+   font-size: 1.5em;
+  font-weight: 700;
+  color: #333;
 }

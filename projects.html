@@ -1,132 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Features Section</title>
     <style>
-        :root {
-            --primary-color: #3498db;
-            --secondary-color: #2ecc71;
-            --text-color: #e63838;
-            --background-color: #0f0d0d;
-        }
+      :root {
+        --primary-color: #3498db;
+        --secondary-color: #2ecc71;
+        --text-color: #e63838;
+        --background-color: #0f0d0d;
+      }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            background-color: var(--background-color);
-            color: var(--text-color);
-        }
+      body {
+        font-family: "Arial", sans-serif;
+        line-height: 1.6;
+        background-color: var(--background-color);
+        color: var(--text-color);
+      }
 
-        .features-section {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 2rem;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-        }
+      .navbar {
+        background-color: var(--primary-color);
+        padding: 1rem;
+        text-align: center;
+      }
 
-        .feature-card {
-            background-color: rgba(36, 37, 44, 0.955);
-            border-radius: 10px;
-            padding: 1.5rem;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
+      .navbar a {
+        color: white;
+        margin: 0 1rem;
+        text-decoration: none;
+        font-weight: bold;
+      }
 
-        .feature-card:hover {
-            transform: translateY(-10px);
-        }
+      .features-section {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+      }
 
-        .feature-icon {
-            font-size: 3rem;
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-        }
+      .feature-card {
+        background-color: rgba(36, 37, 44, 0.955);
+        border-radius: 10px;
+        padding: 1.5rem;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
 
-        .feature-title {
-            margin-bottom: 0.75rem;
-            color: var(--text-color);
-        }
+      .feature-card:hover {
+        transform: translateY(-10px);
+      }
 
-        .feature-description {
-            color: #666;
-        }
+      .feature-icon {
+        font-size: 3rem;
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+      }
 
-        .dynamic-features {
-            opacity: 0.5;
-            cursor: wait;
-        }
+      .feature-title {
+        margin-bottom: 0.75rem;
+        color: var(--text-color);
+      }
+
+      .feature-description {
+        color: #666;
+      }
+
+      .dynamic-features {
+        opacity: 0.5;
+        cursor: wait;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#features">Features</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
     <section class="features-section" id="featuresContainer">
-        <div class="feature-card">
-            <div class="feature-icon">🚀</div>
-            <h3 class="feature-title">Fast Performance</h3>
-            <p class="feature-description">Optimized code and efficient algorithms ensure lightning-fast operations.</p>
-        </div>
-        <div class="feature-card">
-            <div class="feature-icon">🔒</div>
-            <h3 class="feature-title">Secure Solutions</h3>
-            <p class="feature-description">Advanced security measures protect your data and privacy.</p>
-        </div>
-        <div class="feature-card">
-            <div class="feature-icon">📊</div>
-            <h3 class="feature-title">Data Insights</h3>
-            <p class="feature-description">Comprehensive analytics and reporting tools.</p>
-        </div>
-        <div class="feature-card dynamic-features" id="dynamicFeature">
-            <div class="feature-icon">🔄</div>
-            <h3 class="feature-title">Loading Dynamic Feature</h3>
-            <p class="feature-description">Fetching additional features...</p>
-        </div>
+      <div class="feature-card">
+        <div class="feature-icon">🚀</div>
+        <h3 class="feature-title">Fast Performance</h3>
+        <p class="feature-description">
+          Optimized code and efficient algorithms ensure lightning-fast
+          operations.
+        </p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔒</div>
+        <h3 class="feature-title">Secure Solutions</h3>
+        <p class="feature-description">
+          Advanced security measures protect your data and privacy.
+        </p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📊</div>
+        <h3 class="feature-title">Data Insights</h3>
+        <p class="feature-description">
+          Comprehensive analytics and reporting tools.
+        </p>
+      </div>
+      <div class="feature-card dynamic-features" id="dynamicFeature">
+        <div class="feature-icon">🔄</div>
+        <h3 class="feature-title">Loading Dynamic Feature</h3>
+        <p class="feature-description">Fetching additional features...</p>
+      </div>
     </section>
 
     <script>
-        // Simulated Netlify Function fetch (you'd replace with actual function URL)
-        async function fetchDynamicFeature() {
-            try {
-                // In a real scenario, this would be a Netlify Function endpoint
-                const response = await fetch('/.netlify/functions/get-dynamic-feature');
-                
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
+      // Simulated Netlify Function fetch (you'd replace with actual function URL)
+      async function fetchDynamicFeature() {
+        try {
+          // In a real scenario, this would be a Netlify Function endpoint
+          const response = await fetch(
+            "/.netlify/functions/get-dynamic-feature"
+          );
 
-                const dynamicFeature = await response.json();
-                
-                const dynamicFeatureElement = document.getElementById('dynamicFeature');
-                dynamicFeatureElement.innerHTML = `
+          if (!response.ok) {
+            throw new Error("Network response was not ok");
+          }
+
+          const dynamicFeature = await response.json();
+
+          const dynamicFeatureElement =
+            document.getElementById("dynamicFeature");
+          dynamicFeatureElement.innerHTML = `
                     <div class="feature-icon">${dynamicFeature.icon}</div>
                     <h3 class="feature-title">${dynamicFeature.title}</h3>
                     <p class="feature-description">${dynamicFeature.description}</p>
                 `;
-                dynamicFeatureElement.classList.remove('dynamic-features');
-            } catch (error) {
-                console.error('Error fetching dynamic feature:', error);
-                const dynamicFeatureElement = document.getElementById('dynamicFeature');
-                dynamicFeatureElement.innerHTML = `
+          dynamicFeatureElement.classList.remove("dynamic-features");
+        } catch (error) {
+          console.error("Error fetching dynamic feature:", error);
+          const dynamicFeatureElement =
+            document.getElementById("dynamicFeature");
+          dynamicFeatureElement.innerHTML = `
                     <div class="feature-icon">
                         <img src="https://via.placeholder.com/150" alt="fallout response" />    
                     </div>
                     <h3 class="feature-title">fallout response</h3>
                     <p class="feature-description">There was an error fetching the  feature. Please try again later.</p>
                 `;
-            }
         }
+      }
 
-        // Call the function when the page loads
-        document.addEventListener('DOMContentLoaded', fetchDynamicFeature());
+      // Call the function when the page loads
+      document.addEventListener("DOMContentLoaded", fetchDynamicFeature());
     </script>
-</body>
+  </body>
 </html>

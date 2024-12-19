@@ -5,7 +5,7 @@ yarn-error.log
 
 # databases
 databases/contact_form_db.sql
-databases/get_data/customer_conact_forrm_db_get.js
+databases/get_data/customer_conact_form_db_get.js
 
 # Logs
 logs/
