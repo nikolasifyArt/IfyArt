@@ -1,0 +1,39 @@
+[dev]
+framework = "static"
+
+[build]
+command = "echo No Build For this site, we are living on the edge"
+publish = "public"
+ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF ."
+
+[CONTEXT.production]
+environment = { MY_IMPORTANT_VARIABLE = "this is a very important value" }
+
+[[redirects]]
+from = "/img/og/:text"
+to = "https://res.cloudinary.com/netlify.image/upload/c_fit,g_west,h_400,co_rgb:FFFFFFFF,l_text:netlify.com:Pacaembu-Bold.ttf_57::text,w_1053,x_46/v16191233320/netlify.com/default-og-background-learn-more.png"
+status = 200
+
+[[edge_functions]]
+function = "transform"
+path = "/*"
+
+[build.environment]
+NODE_VERSION = "14"
+
+[[plugins]]
+package = "@netlify/plugin-functions-install-core"
+
+[[plugins]]
+package = "@netlify/plugin-lighthouse"
+
+[[functions]]
+directory = "netlify/functions"
+
+[[functions]]
+name = "netlify"
+path = "netlify/functions/netlify.mjs"
+
+[[functions]]
+name = "getInstallationProgress"
+path = "netlify/functions/getInstallationProgress.mjs"
