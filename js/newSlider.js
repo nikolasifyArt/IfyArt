@@ -9,7 +9,7 @@ let active = 0;
 next.addEventListener("click", () => {
   slider.classList.toggle("zoom");
 
-  currdeg = currdeg - 120;
+  currdeg -= 120;
 
   if (active === item.length - 1) {
     active = 0;
@@ -23,7 +23,7 @@ next.addEventListener("click", () => {
 prev.addEventListener("click", () => {
   slider.classList.toggle("zoom");
 
-  currdeg = currdeg + 120;
+  currdeg += 120;
 
   if (active === 0) {
     active = item.length - 1;
@@ -41,7 +41,7 @@ const toggle = () => {
     }
 
     item[active].classList.add("active");
-    wrapper.style.transform = "rotateY(" + currdeg + "deg)";
+    wrapper.style.transform = `rotateY(${currdeg}deg)`;
   }, 900);
 
   setTimeout(() => {

@@ -9,7 +9,7 @@ hamburger.addEventListener("click", () => {
 //  images slider scripts
 let counter = 1;
 setInterval(() => {
-  document.getElementById("radio" + counter).checked = true;
+  document.getElementById(`radio${counter}`).checked = true;
   counter++;
   if (counter > 4) {
     counter = 1;

@@ -2,6 +2,19 @@
 *::after {
   box-sizing: border-box !important;
 }
+/* min mobile screen size view  */
+ @media screen and  (max-width: 400px) and (min-width: 200px) and (min-height: 300px)  {
+  .main-content {
+    margin-bottom: 10px;
+    width: fit-content;
+    min-width: 200px !important;
+    max-width: 400px !important;
+  }
+  
+  .main-content:nth-child()
+  
+ }
+
 
 .section-header-text {
   font-size: 2.5rem;

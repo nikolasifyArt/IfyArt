@@ -8,8 +8,8 @@
         :root {
             --primary-color: #3498db;
             --secondary-color: #2ecc71;
-            --text-color: #333;
-            --background-color: #f4f4f4;
+            --text-color: #e63838;
+            --background-color: #0f0d0d;
         }
 
         * {
@@ -35,7 +35,7 @@
         }
 
         .feature-card {
-            background-color: white;
+            background-color: rgba(36, 37, 44, 0.955);
             border-radius: 10px;
             padding: 1.5rem;
             text-align: center;
@@ -116,15 +116,17 @@
                 console.error('Error fetching dynamic feature:', error);
                 const dynamicFeatureElement = document.getElementById('dynamicFeature');
                 dynamicFeatureElement.innerHTML = `
-                    <div class="feature-icon">❌</div>
-                    <h3 class="feature-title">Feature Unavailable</h3>
-                    <p class="feature-description">Unable to load dynamic feature</p>
+                    <div class="feature-icon">
+                        <img src="https://via.placeholder.com/150" alt="fallout response" />    
+                    </div>
+                    <h3 class="feature-title">fallout response</h3>
+                    <p class="feature-description">There was an error fetching the  feature. Please try again later.</p>
                 `;
             }
         }
 
         // Call the function when the page loads
-        document.addEventListener('DOMContentLoaded', fetchDynamicFeature);
+        document.addEventListener('DOMContentLoaded', fetchDynamicFeature());
     </script>
 </body>
 </html>

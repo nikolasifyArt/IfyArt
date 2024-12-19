@@ -147,6 +147,7 @@ p {
     justify-content: center;
     gap: 1.5rem;
 }
+
 .social-link {
     display: inline-block;
     font-size: 1.5rem;
@@ -533,4 +534,16 @@ input[type="submit"]:hover {
     transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transform: translateX(-100%);
     animation: slide 45000ms infinite linear;
+}
+
+.main-content {
+    background: linear-gradient(45deg, #3498db, #2980b9);
+    color: rgb(179, 12, 12);
+    font-family: 'Georgia', sans-serif;
+    
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    font-size: 25px;
+    font-weight: 700;
 }
