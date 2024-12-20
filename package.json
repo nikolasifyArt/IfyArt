@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "three": "^0.160.0",
     "@babel/core": "^7.26.0",
     "@babel/plugin-transform-class-properties": "^7.25.9",
     "@babel/plugin-transform-object-assign": "^7.25.9",
@@ -23,7 +24,6 @@
     "jwt-decode": "^4.0.0",
     "webpack": "^5.97.1"
   },
-  "description": "",
   "devDependencies": {
     "@commitlint/cli": "^19.6.1",
     "@netlify/edge-functions": "^2.11.1",
@@ -33,5 +33,6 @@
     "rimraf": "^6.0.1",
     "tempy": "^3.1.0",
     "typescript": "^5.7.2"
-  }
+  },
+  "description": ""
 }
