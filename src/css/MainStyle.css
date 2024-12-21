@@ -574,7 +574,7 @@ input[type="submit"]:hover {
   overflow: visible;
 }
 .main-content-wrapper > h1 {
-  font-size: 16px ;
+  font-size: 16px;
   font-weight: 900;
 }
 .main-content-header {
@@ -594,6 +594,123 @@ input[type="submit"]:hover {
   background-image: url("/documents/logo.png");
 }
 /* main content container styling end */
+/* Featured Artworks Section Styling Start */
+.main-art-section-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  @media (min-width: 641px) and (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1025px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+.featured-artworks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+  background-color: #1a202c;
+  border-radius: 10px;
+}
+
+.featured-artworks-section-subHeader {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #e2e8f0;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.artwork-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.artwork-item {
+  background-color: #2d3748;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.artwork-item:hover {
+  transform: translateY(-5px);
+  background-color: #4a5568;
+}
+
+.artwork-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #edf2f7;
+  margin-bottom: 0.5rem;
+}
+
+.about-artist {
+  background-color: #2d3748;
+  padding: 2rem;
+  border-radius: 10px;
+  color: #e2e8f0;
+  margin-bottom: 2rem;
+}
+
+.section-section-header {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #e2e8f0;
+  margin-bottom: 1rem;
+}
+
+.artist-bio {
+  font-size: 1rem;
+  color: #cbd5e0;
+  margin-bottom: 1rem;
+}
+
+.artist-contact-section {
+  background-color: #2d3748;
+  padding: 2rem;
+  border-radius: 10px;
+  color: #e2e8f0;
+}
+
+.artist-contact-text {
+  font-size: 1rem;
+  color: #cbd5e0;
+  margin-bottom: 1rem;
+}
+
+.artist-contact-button {
+  background-color: #4a5568;
+  color: #e2e8f0;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.artist-contact-button:hover {
+  background-color: #2b6cb0;
+}
+
+/* Featured Artworks Section Styling Start */
 
 /*  MAIN CONTENT  */
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MAIN CONTENT STYLING START ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
