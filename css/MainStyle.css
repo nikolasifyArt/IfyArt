@@ -44,42 +44,7 @@ p {
   font-size: 1em;
   font-weight: 400;
 }
-/* Layout */
-.main-content {
-  flex: 1 0 auto;
-  padding: 2rem;
-}
-/* main content container styling start */
-.main-content-wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  height: 100%;
-  margin-top: -60px;
-  position: relative;
-  z-index: 0;
-  overflow: visible;
-}
-.main-content-wrapper > h1 {
-  font-size: 16px !important;
-}
-.main-content-header {
-  max-width: 400px;
-  max-height: 300px;
-  display: inline-block;
-  position: relative;
-  padding: 10px 10px 20px 10px;
-  margin-bottom: 20px;
-  font-size: 0 7em;
-}
-.main-content-header-text {
-  font-size: 1.5em;
-  font-weight: 600;
-  text-align: center;
-  padding: 20px;
-  background-image: url("/documents/logo.png");
-}
-/* main content container styling end */
+
 /* Navigation styles */
 .nav-container,
 .navbar {
@@ -575,6 +540,7 @@ input[type="submit"]:hover {
   animation: slide 45000ms infinite linear;
 }
 
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MAIN CONTENT STYLING START ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .main-content {
   background: linear-gradient(45deg, #3498db, #2980b9);
   color: rgb(179, 12, 12);
@@ -586,3 +552,45 @@ input[type="submit"]:hover {
   font-size: 25px;
   font-weight: 700;
 }
+
+/* Layout */
+.main-content {
+  flex: 1 0 auto;
+  padding: 2rem;
+}
+/* main content container styling start */
+.main-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
+  margin-top: -60px;
+  position: relative;
+  z-index: 0;
+  overflow: visible;
+}
+.main-content-wrapper > h1 {
+  font-size: 16px ;
+  font-weight: 900;
+}
+.main-content-header {
+  max-width: 400px;
+  max-height: 300px;
+  display: inline-block;
+  position: relative;
+  padding: 10px 10px 20px 10px;
+  margin-bottom: 20px;
+  font-size: 0 7em;
+}
+.main-content-header-text {
+  font-size: 1.5em;
+  font-weight: 600;
+  text-align: center;
+  padding: 20px;
+  background-image: url("/documents/logo.png");
+}
+/* main content container styling end */
+
+
+/*  MAIN CONTENT  */
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MAIN CONTENT STYLING START ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
