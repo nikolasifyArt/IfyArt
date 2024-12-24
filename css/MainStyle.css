@@ -590,7 +590,17 @@ main content container styling end .main-content {
 /* Artist main content header start */
 .artist-section-wrapper {
   padding: 2rem;
-  background-color: #f0f0f0;
+  height: fit-content;
+  z-index: 10;
+  min-width: 400px;
+  margin-left: 0;
+  min-height:1000px;
+  background-color: #5d0e0e;
+}
+
+.artist-section-wrapper img {
+  max-width: 200px !important;
+  max-height: 100px !important;
 }
 
 .artist-featured-artworks {
