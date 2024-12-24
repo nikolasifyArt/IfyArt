@@ -547,14 +547,21 @@ input[type="submit"]:hover {
 /* main content container styling start */
 .main-content-wrapper {
   display: flex;
-  flex-direction: column;
   min-height: 100vh;
   height: 100%;
-  margin-top: -60px;
   position: relative;
-  z-index: 0;
-  overflow: visible;
+  z-index: 10;
 }
+
+/* main-content-wrapper  small and medium sized screen sized phoned responsive styles start */
+  @media only screen and (max-width:400px){
+    .main-content-wrapper {
+      margin: -15px;
+
+    }
+  }
+
+/* main-content-wrapper  small and medium sized screen sized phoned responsive styles end */
 .main-content-wrapper > h1 {
   font-size: 16px !important;
 }
@@ -594,7 +601,7 @@ main content container styling end .main-content {
   z-index: 10;
   min-width: 400px;
   margin-left: 0;
-  min-height:1000px;
+  min-height: 1000px;
   background-color: #5d0e0e;
 }
 
