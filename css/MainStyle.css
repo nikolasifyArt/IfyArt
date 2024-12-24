@@ -589,83 +589,277 @@ main content container styling end .main-content {
 /* Main Artist Content Start  */
 /* Artist main content header start */
 .artist-section-wrapper {
+  padding: 2rem;
+  background-color: #f0f0f0;
 }
 
 .artist-featured-artwotks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .artist-section-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 .artist-artwork-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .artist-artwork-item {
+  flex: 1 1 calc(33.333% - 1rem);
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* artist artwork item img  start*/
-
-.artist-artwork-item {
-}
-/* artist artwork item img end */
 .Featured-Artwork-1 {
+  width: 100%;
+  height: auto;
 }
+
 .artist-third-grade-heading {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
 }
+
 .artwork-title {
-}
-/* to be used for js dynamic auto generating of title/text context relevant to of current exiting featured artwork */
-#dynamicArtworkThirdGradeHeadingOne {
-
+  font-size: 1rem;
+  color: #666;
 }
 
-#dynamicArtworkThirdGradeHeadingTwp {
-  
-}
-
-#dynamicArtworkThirdGradeHeadingThree {
-  
-}
-#dynamicArtworkOne {
-}
-
-#dynamicArtworkTwo {
-}
-
+#dynamicArtworkThirdGradeHeadingOne,
+#dynamicArtworkThirdGradeHeadingTwp,
+#dynamicArtworkThirdGradeHeadingThree,
+#dynamicArtworkOne,
+#dynamicArtworkTwo,
 #dynamicArtworkThree {
+  display: block;
+  margin-top: 0.5rem;
 }
 
-/* Artist Main Content End */
-/* artist bio start */
+/* Artist Bio Section */
 .artist-bio-wrapper {
+  padding: 2rem;
+  background-color: #f9f9f9;
 }
+
 .about-artist-section {
+  margin-bottom: 2rem;
 }
 
 .artist-bio-section-header {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 .main-artist-text-content-wrapper {
+  font-size: 1rem;
+  color: #333;
 }
 
 .artist-bio-tag-element-text-description {
-}
-
-.artist-bio-tag-element-text-description {
+  margin-bottom: 1rem;
 }
 
 .artist-contact-section {
-
+  padding: 2rem;
+  background-color: #f0f0f0;
 }
+
 .artist-contact-section-header {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 .artist-contact-text {
-
+  font-size: 1rem;
+  color: #333;
 }
 
 .artist-contact-section-button {
-  
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.artist-contact-section-button:hover {
+  background-color: #0056b3;
+}
+
+/* responsive media queries for the artist main content section  */
+/* Media Queries */
+@media (max-width: 1439px) {
+  .artist-artwork-item {
+    flex: 1 1 calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 1024px) {
+  .artist-artwork-item {
+    flex: 1 1 calc(100% - 1rem);
+  }
+}
+
+@media (max-width: 900px) {
+  .artist-section-heading,
+  .artist-bio-section-header,
+  .artist-contact-section-header {
+    font-size: 1.5rem;
+  }
+
+  .artist-third-grade-heading {
+    font-size: 1.25rem;
+  }
+
+  .artwork-title,
+  .main-artist-text-content-wrapper,
+  .artist-contact-text {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .artist-section-wrapper,
+  .artist-bio-wrapper,
+  .artist-contact-section {
+    padding: 1rem;
+  }
+
+  .artist-contact-section-button {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .artist-section-heading,
+  .artist-bio-section-header,
+  .artist-contact-section-header {
+    font-size: 1.25rem;
+  }
+
+  .artist-third-grade-heading {
+    font-size: 1rem;
+  }
+
+  .artwork-title,
+  .main-artist-text-content-wrapper,
+  .artist-contact-text {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 1439px) {
+  .artist-artwork-item {
+    flex: 1 1 calc(50% - 1rem);
+  }
+
+  .artist-artwork-item img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .artist-artwork-item {
+    flex: 1 1 calc(100% - 1rem);
+  }
+}
+
+/* Media Queries */
+@media (max-width: 1439px) {
+  .artist-artwork-item {
+    flex: 1 1 calc(50% - 1rem);
+  }
+  .artist-artwork-item img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .artist-artwork-item {
+    flex: 1 1 calc(100% - 1rem);
+  }
+  .artist-artwork-item img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .artist-section-heading,
+  .artist-bio-section-header,
+  .artist-contact-section-header {
+    font-size: 1.5rem;
+  }
+
+  .artist-third-grade-heading {
+    font-size: 1.25rem;
+  }
+
+  .artwork-title,
+  .main-artist-text-content-wrapper,
+  .artist-contact-text {
+    font-size: 0.875rem;
+  }
+
+  .artist-artwork-item img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .artist-section-wrapper,
+  .artist-bio-wrapper,
+  .artist-contact-section {
+    padding: 1rem;
+  }
+
+  .artist-contact-section-button {
+    padding: 0.5rem;
+  }
+
+  .artist-artwork-item img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .artist-section-heading,
+  .artist-bio-section-header,
+  .artist-contact-section-header {
+    font-size: 1.25rem;
+  }
+
+  .artist-third-grade-heading {
+    font-size: 1rem;
+  }
+
+  .artwork-title,
+  .main-artist-text-content-wrapper,
+  .artist-contact-text {
+    font-size: 0.75rem;
+  }
+
+  .artist-artwork-item img {
+    width: 100%;
+    height: auto;
+  }
 }
 /* artist bio end */
 /*  */
