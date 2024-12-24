@@ -112,6 +112,7 @@ p {
   position: fixed;
   bottom: 0;
   width: 100%;
+  z-index: 100;
   overflow: hidden;
 }
 .footer::before {
@@ -547,6 +548,7 @@ input[type="submit"]:hover {
 /* main content container styling start */
 .main-content-wrapper {
   display: flex;
+  height: 400px;
   min-height: 100vh;
   height: 100%;
   position: relative;
