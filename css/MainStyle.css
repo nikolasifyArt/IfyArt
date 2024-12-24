@@ -593,7 +593,7 @@ main content container styling end .main-content {
   background-color: #f0f0f0;
 }
 
-.artist-featured-artwotks {
+.artist-featured-artworks {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
