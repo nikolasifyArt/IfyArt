@@ -622,12 +622,19 @@ main content container styling end .main-content {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  color: #f9f8f6;
 }
 
 .artist-artwork-gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
+  justify-content: center;
+  /* silver background color but in rgb form with some with some transparency */
+  background-color: rgba(192, 192, 192, 0.71);
+  opacity: 1;
+  
+  margin: 0px 10px 0 10px;
 }
 
 .artist-artwork-item {
@@ -649,8 +656,9 @@ main content container styling end .main-content {
 }
 
 .artwork-title {
-  font-size: 1rem;
+  font-size: 2em;
   color: #666;
+  fo
 }
 
 #dynamicArtworkThirdGradeHeadingOne,
@@ -659,18 +667,20 @@ main content container styling end .main-content {
 #dynamicArtworkOne,
 #dynamicArtworkTwo,
 #dynamicArtworkThree {
-  display: block;
+  display: inline-block;
   margin-top: 0.5rem;
 }
 
 /* Artist Bio Section */
 .artist-bio-wrapper {
+  display: grid;
   padding: 2rem;
   background-color: #f9f9f9;
 }
 
 .about-artist-section {
   margin-bottom: 2rem;
+  display: grid;
 }
 
 .artist-bio-section-header {
@@ -686,6 +696,8 @@ main content container styling end .main-content {
 
 .artist-bio-tag-element-text-description {
   margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .artist-contact-section {
@@ -787,6 +799,7 @@ main content container styling end .main-content {
 
   .artist-artwork-item img {
     width: 100%;
+    max-width: ;
     height: auto;
   }
 }
@@ -822,7 +835,8 @@ main content container styling end .main-content {
   .artist-section-heading,
   .artist-bio-section-header,
   .artist-contact-section-header {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+
   }
 
   .artist-third-grade-heading {
