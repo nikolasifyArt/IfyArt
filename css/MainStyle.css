@@ -587,42 +587,73 @@ main content container styling end .main-content {
 }
 
 /* Main Artist Content Start  */
-  .artist-section-wrapper {
-    
-  }
+/* Artist main content header start */
+.artist-section-wrapper {
+}
 
-  .artist-featured-artwotks {
+.artist-featured-artwotks {
+}
 
-  }
+.artist-section-heading {
+}
 
-  .artist-section-heading {
+.artist-artwork-gallery {
+}
 
-  }
+.artist-artwork-item {
+}
 
-  .artist-artwork-gallery {
+/* artist artwork item img  start*/
 
-  }
+.artist-artwork-item {
+}
+/* artist artwork item img end */
+.Featured-Artwork-1 {
+}
+.artist-third-grade-heading {
+}
+.artwork-title {
+}
+/* to be used for js dynamic auto generating of title/text context relevant to of current exiting featured artwork */
+#dynamicArtworkThirdGradeHeadingOne {
 
-  .artist-artwork-item {
+}
 
-  }
-
-  .artist-artwork-item img {
-
-  }
-
-  .artist-artwork-item  {
-
-  }
-  .Featured-Artwork-1 {
-
-  }
-  .artist-third-grade-heading {
-
-  }
-  .artwork-title {
-
-  }
+#dynamicArtworkThirdGradeHeadingTwp {
   
+}
 
+#dynamicArtworkThirdGradeHeadingThree {
+  
+}
+#dynamicArtworkOne {
+}
+
+#dynamicArtworkTwo {
+}
+
+#dynamicArtworkThree {
+}
+
+/* Artist Main Content End */
+/* artist bio start */
+.artist-bio-wrapper {
+}
+.about-artist-section {
+}
+
+.artist-bio-section-header {
+}
+
+.main-artist-text-content-wrapper {
+}
+
+.artist-bio-tag-element-text-description {
+}
+
+.artist-bio-tag-element-text-description {
+}
+
+/* artist bio end */
+/*  */
 /* Main Artist Content End  */
